@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/yaman0/projet_LPA2_frontend.svg?branch=master)](https://travis-ci.org/yaman0/projet_LPA2_frontend)
+[![Maintainability](https://api.codeclimate.com/v1/badges/e4304e1dd50497b1b699/maintainability)](https://codeclimate.com/github/yaman0/projet_LPA2_frontend/maintainability)
 # projet_LPA2_frontend
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
