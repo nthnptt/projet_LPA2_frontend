@@ -3,6 +3,4 @@ export class Town {
   name: string
   icon: string
   temperature: number
-  
-
 }
