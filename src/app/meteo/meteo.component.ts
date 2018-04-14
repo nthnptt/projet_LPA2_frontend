@@ -3,7 +3,7 @@ import { Town } from '../town'
 @Component({
   selector: 'app-meteo',
   templateUrl: './meteo.component.html',
-  styleUrls: ['./meteo.component.css']
+  styleUrls: ['./meteo.component.css'],
 })
 export class MeteoComponent implements OnInit {
 
