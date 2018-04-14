@@ -7,7 +7,7 @@ import {MatButtonModule} from '@angular/material/button';
 
 import { AppComponent } from './app.component';
 import { MeteoComponent } from './meteo/meteo.component';
-
+import { HttpClientModule } from '@angular/common/http';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
@@ -19,8 +19,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     BrowserModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    MatCardModule
-
+    MatCardModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
