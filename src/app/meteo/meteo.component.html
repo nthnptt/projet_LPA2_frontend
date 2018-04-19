@@ -1,15 +1,11 @@
-<mat-card class="example-card">
+<mat-card class="weather-card">
 <mat-card-header>
-  <div mat-card-avatar class="example-header-image"></div>
-  <mat-card-title><h1>{{ town.name | uppercase }}</h1></mat-card-title>
+  <mat-card-title class="card-title">{{ town.name | uppercase }}</mat-card-title>
 </mat-card-header>
-<mat-card-content>
-  <div>
-    <b>
-      Temperature :
-    </b>
-    {{ town.temperature }}
-  </div>
+<mat-card-content class="weather-card-content">
   <div class="wi wi-forecast-io-{{ town.icon }} weather-logo"></div>
+  <div class="weather-card-temp">
+    {{ town.temperature }}&#8451;
+  </div>
 </mat-card-content>
 </mat-card>

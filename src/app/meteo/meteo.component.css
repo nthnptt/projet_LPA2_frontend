@@ -1,3 +1,22 @@
 .weather-logo{
   font-size: 50px;
+  display: inline-block;
+}
+.weather-card{
+  display: inline-block;
+}
+.weather-card-temp{
+  display: inline-block;
+  font-size: 50px;
+}
+.weather-card-temp{
+  margin-left: 10px;
+}
+.weather-card-content{
+  display: flex;
+  justify-content: space-around;
+}
+.card-title{
+  font-size: 24px;
+  font-weight: bold;
 }
