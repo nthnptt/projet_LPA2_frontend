@@ -11,4 +11,5 @@ export class TownService {
   getTown(id: number) : Observable<Town> {
     return this.http.get<Town>(`${this.URL}/${id}.json`);
   }
+
 }
