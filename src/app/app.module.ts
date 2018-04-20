@@ -12,12 +12,14 @@ import { HttpClientModule } from '@angular/common/http';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { WeatherCardComponent } from './weather-card/weather-card.component';
 import { WeatherAppComponent } from './weather-app/weather-app.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WeatherCardComponent,
-    WeatherAppComponent
+    WeatherAppComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
