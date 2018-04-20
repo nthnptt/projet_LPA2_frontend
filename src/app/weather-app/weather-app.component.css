@@ -1,0 +1,14 @@
+.loader-div{
+  margin: 0 auto;
+  width: 100px;
+  margin-top: 15%;
+}
+.weather-card-container{
+  display: flex;
+	flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.weather-card-container{
+  display: contents;
+}

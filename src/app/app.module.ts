@@ -10,11 +10,13 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { WeatherCardComponent } from './weather-card/weather-card.component';
+import { WeatherAppComponent } from './weather-app/weather-app.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    WeatherCardComponent
+    WeatherCardComponent,
+    WeatherAppComponent
   ],
   imports: [
     BrowserModule,

@@ -20,7 +20,6 @@ export class WeatherCardComponent implements OnInit {
   }
 
   ngOnInit() {
-    console.log(this.townId)
     this.refreshWeather()
   }
 

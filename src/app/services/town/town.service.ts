@@ -7,7 +7,12 @@ import { Observable } from 'rxjs';
 export class TownService {
   private URL = "https://projetlpa2111.herokuapp.com/towns"
   constructor(private http: HttpClient) { }
+
   getTown(id: number) : Observable<Town> {
     return this.http.get<Town>(`${this.URL}/${id}.json`);
+  }
+
+  getTowns(): Observable<Town[]> {
+    return this.http.get<Town[]>(`${this.URL}.json`);
   }
 }
