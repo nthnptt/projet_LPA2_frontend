@@ -1,7 +1,5 @@
-<div  *ngIf='!loadmode'>
-  <div *ngFor="let town of towns" class="weather-card-container">
-    <weather-card [townId]=town.id ></weather-card>
-  </div>
+<div  *ngIf='!loadmode' class="weather-card-container">
+    <weather-card *ngFor="let town of towns" [townId]=town.id ></weather-card>
 </div>
 <div *ngIf='loadmode' class="loader-div">
   <mat-progress-spinner
