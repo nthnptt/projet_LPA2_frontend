@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Town } from '../model/town'
+import { Town } from '../model/town';
 import { TownService } from '../model/town.service';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
@@ -10,6 +10,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 })
 export class WeatherCardComponent implements OnInit {
 
+	town: Town;
   private townService: TownService;
   constructor(private http: HttpClient) {
 	  this.townService = new TownService(http)
