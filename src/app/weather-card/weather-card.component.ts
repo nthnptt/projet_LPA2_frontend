@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Town } from '../model/town';
-import { TownService } from '../model/town.service';
+import { TownService } from '../services/town/town.service';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Component({
