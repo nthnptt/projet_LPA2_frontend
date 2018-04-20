@@ -1,9 +1,9 @@
-<mat-card class="weather-card">
+<mat-card *ngIf="!loadmode" class="weather-card">
 <mat-card-header>
   <mat-card-title class="card-title">{{ town.name | uppercase }}</mat-card-title>
 </mat-card-header>
 <mat-card-content>
-  <div clas="weather-card-content">
+  <div class="weather-card-content">
     <div class="wi wi-forecast-io-{{ town.icon }} weather-logo"></div>
     <div class="weather-card-temp">
       {{ town.temperature }}&#8451;
@@ -14,5 +14,19 @@
     <mat-icon>refresh</mat-icon>
     </button>
   </div>
+
+</mat-card-content>
+</mat-card>
+
+<mat-card *ngIf="loadmode" class="weather-card">
+<mat-card-header>
+  <mat-card-title class="card-title">Loading...</mat-card-title>
+</mat-card-header>
+<mat-card-content>
+  <mat-progress-spinner
+    class="example-margin"
+    color="primary"
+    mode="indeterminate">
+  </mat-progress-spinner>
 </mat-card-content>
 </mat-card>

@@ -5,7 +5,7 @@ import { Observable } from 'rxjs';
 
 @Injectable()
 export class TownService {
-  private URL = "https://lpa2sgadot.herokuapp.com/towns"
+  private URL = "https://projetlpa2111.herokuapp.com/towns"
   constructor(private http: HttpClient) { }
 
   getTown(id: number) : Observable<Town> {

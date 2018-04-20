@@ -9,8 +9,8 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
   styleUrls: ['./weather-card.component.css']
 })
 export class WeatherCardComponent implements OnInit {
-
-	town: Town;
+  loadmode: boolean;
+	private town: Town;
   private townService: TownService;
   constructor(private http: HttpClient) {
 	  this.townService = new TownService(http)
@@ -21,8 +21,10 @@ export class WeatherCardComponent implements OnInit {
   }
 
   refreshWeather(){
+    this.loadmode=true;
     this.townService.getTown(1).subscribe(town => {
       this.town=town;
+      this.loadmode=false;
     });
   }
 
