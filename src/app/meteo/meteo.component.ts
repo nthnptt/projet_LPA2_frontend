@@ -16,6 +16,10 @@ export class MeteoComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.refreshWeather()
+  }
+
+  refreshWeather(){
     this.townService.getTown(1).subscribe(town => {
       this.town=town;
     });
