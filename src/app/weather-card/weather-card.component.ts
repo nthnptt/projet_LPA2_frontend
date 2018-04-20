@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
-import { Town } from '../town'
-import { TownService } from '../town.service';
+import { Town } from '../model/town'
+import { TownService } from '../model/town.service';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Component({
-  selector: 'app-meteo',
-  templateUrl: './meteo.component.html',
-  styleUrls: ['./meteo.component.css'],
+  selector: 'weather-card',
+  templateUrl: './weather-card.component.html',
+  styleUrls: ['./weather-card.component.css']
 })
-export class MeteoComponent implements OnInit {
-  town: Town;
+export class WeatherCardComponent implements OnInit {
+
   private townService: TownService;
   constructor(private http: HttpClient) {
 	  this.townService = new TownService(http)

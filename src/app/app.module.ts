@@ -6,14 +6,14 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 
 import { AppComponent } from './app.component';
-import { MeteoComponent } from './meteo/meteo.component';
 import { HttpClientModule } from '@angular/common/http';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { WeatherCardComponent } from './weather-card/weather-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MeteoComponent
+    WeatherCardComponent
   ],
   imports: [
     BrowserModule,
