@@ -2,10 +2,17 @@
 <mat-card-header>
   <mat-card-title class="card-title">{{ town.name | uppercase }}</mat-card-title>
 </mat-card-header>
-<mat-card-content class="weather-card-content">
-  <div class="wi wi-forecast-io-{{ town.icon }} weather-logo"></div>
-  <div class="weather-card-temp">
-    {{ town.temperature }}&#8451;
+<mat-card-content>
+  <div clas="weather-card-content">
+    <div class="wi wi-forecast-io-{{ town.icon }} weather-logo"></div>
+    <div class="weather-card-temp">
+      {{ town.temperature }}&#8451;
+    </div>
+  </div>
+  <div class="button_container">
+    <button mat-raised-button color="primary">
+    <mat-icon>refresh</mat-icon>
+    </button>
   </div>
 </mat-card-content>
 </mat-card>
